@@ -1,0 +1,12 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chrome-types": "^0.1.190",
+    "typescript": "^5.0.4"
+  }
+}
