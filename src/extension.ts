@@ -31,7 +31,7 @@ async function injectScriptAt(tabId: number) {
 
 function getCurrentTab(): Promise<chrome.tabs.Tab> {
   return new Promise((resolve) =>
-    chrome.tabs.query({}, ([currentTab]) => {
+    chrome.tabs.query({ active: true }, ([currentTab]) => {
       resolve(currentTab);
     })
   );

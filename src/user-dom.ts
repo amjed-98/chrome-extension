@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener(({ data }: Message, _sender, _sendResponse) => {
-  const select = document.querySelector('select');
+  const select = document.getElementById('ACCOUNTS_TO') as HTMLSelectElement | null;
 
   if (!select) {
     console.error({ message: 'No select element found' });
